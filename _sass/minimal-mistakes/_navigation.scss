@@ -341,6 +341,23 @@
         border-bottom: none;
       }
     }
+
+    .dropdown {
+      position: relative;
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      min-width: 160px;
+      background-color: $background-color;
+    }
   }
 }
 
